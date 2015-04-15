@@ -15,7 +15,7 @@ var $can2;
 var beerArray = ['carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
         'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png',
         'carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
-        'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png', 'monkeys_av2.jpg', 'monkeys_av2.jpg'];
+        'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png', 'monkey.png', 'monkey.png'];
 
 var first = "url('/assets/";
 var last = "')";
