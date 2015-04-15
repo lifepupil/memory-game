@@ -9,8 +9,11 @@ function init(){
   $('#board').on('click','.flip3D', selectCan);
 }
 
-var can1;
 
+var $can1;
+var $can2;
+var $can1data;
+var $can2data;
 
 var beerArray = ['carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
         'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png',
@@ -35,12 +38,35 @@ function randomizer() {
 
 // HOW TO UNIQUELY IDENTIFY EACH CAN
 function selectCan(){
+  if ($can1) {
+    $can2data = $(this);
+    console.log($can2data);
+    $can2 = $(this).find('.back')[0].style.cssText;
+    checkMatch();
+    }
+  else {
+    $can1data = $(this);
+    $can1 = $(this).find('.back')[0].style.cssText;
+    console.log($can1data);
+  }
+}
 
-  $can2 = $(this).find('.back')[0].style.cssText.split('assets')[1];
-  if
+function checkMatch(){
+  if ($can1 === $can2){
+    console.log('fuck yea');
+    showMatch();
+  } else { console.log('false check');}
+  clearChoice();
+}
+
+function showMatch(){
+  console.log('showing match..');
+  $can1data.removeClass('front');
+  $can2data.removeClass('front');
+}
 
 
-  // $source
-  console.log($source);
-  debugger;
+function clearChoice(){
+  $can1 = undefined;
+  $can2 = undefined;
 }
