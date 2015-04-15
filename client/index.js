@@ -6,10 +6,10 @@ $(document).ready(init);
 function init(){
   randomizer();
   $('#timer').text('00:00');
-  $('#board').on('click','td', selectCan);
+  $('#board').on('click','.flip3D', selectCan);
 }
 
-
+var can1;
 
 
 var beerArray = ['carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
@@ -26,7 +26,7 @@ function randomizer() {
     var thisBeer = beerArray.splice(currentIndex,1);
 
     var $curTd = $('td:nth('+ i + ')');
-    var $curTd = $('.back:nth('+ i + ')');
+    // var $curTd = $('.back:nth('+ i + ')');
 
     $curTd.css('background-image',first + thisBeer + last);
   }
@@ -35,5 +35,12 @@ function randomizer() {
 
 // HOW TO UNIQUELY IDENTIFY EACH CAN
 function selectCan(){
-  var $source = $(this)
+
+  $can2 = $(this).find('.back')[0].style.cssText.split('assets')[1];
+  if
+
+
+  // $source
+  console.log($source);
+  debugger;
 }
