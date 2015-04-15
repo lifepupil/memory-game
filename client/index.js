@@ -9,8 +9,8 @@ function init(){
   $('#board').on('click','td', selectCan);
 }
 
-
-
+var $can1;
+var $can2;
 
 var beerArray = ['carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
         'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png',
@@ -35,5 +35,6 @@ function randomizer() {
 
 // HOW TO UNIQUELY IDENTIFY EACH CAN
 function selectCan(){
-  var $source = $(this)
+  if ($can1) {$can2 = $(this);}
+  else {$can1 = $(this);}
 }
