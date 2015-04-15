@@ -14,7 +14,7 @@ function init(){
 var beerArray = ['carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
         'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png',
         'carlsberg.png', 'duff.png', 'guiness.png', 'headytopper.png',
-        'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png'];
+        'pbr.png','shiner.png','stowaway.png','tenfidy.png','westbrook.png', 'monkeys_av2.jpg', 'monkeys_av2.jpg'];
 
 var first = "url('/assets/";
 var last = "')";
@@ -25,8 +25,8 @@ function randomizer() {
     var thisBeer = beerArray.splice(currentIndex,1);
     console.log(first+thisBeer+last);
 console.log(beerArray.length);
-
-    // $('td')[i].css('background-image',first+thisBeer+last);
+    // $('td').css({'background-image': 'url(' + id + ')',})
+    $('td')[i].css({'background-image': first+thisBeer+last,});
   }
 
 }
