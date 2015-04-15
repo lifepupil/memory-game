@@ -4,8 +4,9 @@
 $(document).ready(init);
 
 function init(){
-  $('#timer').text('00:00');
   randomizer();
+  $('#timer').text('00:00');
+  $('#board').on('click','td', selectCan);
 }
 
 
@@ -26,6 +27,13 @@ function randomizer() {
 
     var $curTd = $('td:nth('+ i + ')');
     var $curTd = $('.back:nth('+ i + ')');
+
     $curTd.css('background-image',first + thisBeer + last);
   }
+}
+
+
+// HOW TO UNIQUELY IDENTIFY EACH CAN
+function selectCan(){
+  var $source = $(this)
 }

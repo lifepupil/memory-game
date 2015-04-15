@@ -1,16 +1,30 @@
+
+#timer {
+  background-color: black;
+  border: 3px solid red;
+  border-radius: 10px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  // padding-top: 10px;
+  width: 100%;
+  height: 75px;
+
+}
+
 .flip3D{
-  width:240px;
+  width:120px;
   height:200px;
-  margin:10px;
+  // margin:10px;
   float:left;
 }
 .flip3D > .front{
   position:absolute;
   transform: perspective( 600px ) rotateY( 0deg );
   background-image: url('/assets/back.png');
-  background-size: 180px 200px;
+  background-size: 130px 200px;
   background-repeat: no-repeat;
-  width: 180px;
+  width: 130px;
   height:200px;
   // border-radius: 7px;
   backface-visibility: hidden;
@@ -20,9 +34,9 @@
   position:absolute;
   transform: perspective( 600px ) rotateY( 180deg );
   background: rgba(130, 196, 255, 0);
-  background-size: 180px 200px;
+  background-size: 140px 200px;
   background-repeat: no-repeat;
-  width:180px;
+  width:130px;
   height:200px;
   // border-radius: 7px;
   backface-visibility: hidden;
