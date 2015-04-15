@@ -23,9 +23,9 @@ function randomizer() {
   for (var i = 19; i>=0 ; i--) {
     var currentIndex = Math.floor(Math.random()*i);
     var thisBeer = beerArray.splice(currentIndex,1);
-    console.log(first+thisBeer+last);
-    console.log(beerArray.length);
+
     var $curTd = $('td:nth('+ i + ')');
+    var $curTd = $('.back:nth('+ i + ')');
     $curTd.css('background-image',first + thisBeer + last);
   }
 }

@@ -4,14 +4,19 @@
 .flip3D > .front{
   position:absolute;
   transform: perspective( 600px ) rotateY( 0deg );
-  background:#FC0; width:240px; height:200px; border-radius: 7px;
+  background-image: url('/assets/back.png');
+  width:240px;
+  height:200px;
+  border-radius: 7px;
+  // background:#FC0; width:240px; height:200px; border-radius: 7px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
 }
 .flip3D > .back{
   position:absolute;
   transform: perspective( 600px ) rotateY( 180deg );
-  background: #80BFFF; width:240px; height:200px; border-radius: 7px;
+  background: rgba(130, 196, 255, 0); 
+  width:240px; height:200px; border-radius: 7px;
   backface-visibility: hidden;
   transition: transform .5s linear 0s;
 }
